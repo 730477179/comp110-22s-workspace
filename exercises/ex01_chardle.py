@@ -53,24 +53,15 @@ else:
 
 
 if (matching_character == 0):
-    print("no instances of " + one_letter_input, "found in", five_letter_word)
+    print("no instances of " + one_letter_input + " found in "+ five_letter_word)
 else:
     if (matching_character == 1):
-        print("1 instance of" + one_letter_input "found in" + five_letter_word")
-    else:
-        if(matching_character == 2):
-            print("2 instances of" + one_letter_input "found in" + five_letter_word")
-        else:
-            if(matching_character ==3 ):
-            print("3 instances of" + one_letter_input "found in" + five_letter_word")
-            else:
-                if(matching_character == 4):
-                print("4 instances of" + one_letter_input "found in" + five_letter_word")
-                else:
-                    if(matching_character == 5)
-                    print("5 instances of" + one_letter_input"found in" + five_letter_word")
-
-
-
-            
-
+        print("1 instance of " + one_letter_input  + " found in " +  five_letter_word)
+    if(matching_character == 2):
+        print("2 instances of " + one_letter_input  + " found in" +  five_letter_word)
+    if(matching_character == 3):
+        print("3 instances of " + one_letter_input  + " found in" +  five_letter_word)
+    if(matching_character == 4):
+        print("4 instances of " + one_letter_input  + " found in" +  five_letter_word)
+    if(matching_character == 5):
+        print("5 instances of " + one_letter_input + " found in " +  five_letter_word)
