@@ -4,20 +4,18 @@ __author__= "730477179"
 
 five_letter_word: str = input("Enter a 5 character word:")
 if len(five_letter_word) < 5:
-    print("Word must contain 5 characters")
+    print("Error: Word must contain 5 characters")
     quit()
 if len(five_letter_word) > 5:
-    print("Word must contain 5 characters")
+    print("Error: Word must contain 5 characters")
     quit()
-    
-
 
 one_letter_input: str = input("Enter a single character:")
 if len(one_letter_input) > 1:
-    print("Character must be a single character.")
+    print("Error: Character must be a single character.")
     quit()
 if len(one_letter_input) < 1:
-    print("Character must be a single character.")
+    print("Error: Character must be a single character.")
     quit()
 
 matching_character: int = 0
@@ -53,10 +51,10 @@ else:
 
 
 if (matching_character == 0):
-    print("no instances of " + one_letter_input + " found in " + five_letter_word)
+    print("No instances of " + one_letter_input + " found in " + five_letter_word)
 else:
     if (matching_character == 1):
-        print("1 instances of " + one_letter_input  + " found in " +  five_letter_word)
+        print("1 instance of " + one_letter_input  + " found in " +  five_letter_word)
     if(matching_character == 2):
         print("2 instances of " + one_letter_input  + " found in " +   five_letter_word)
     if(matching_character == 3):
