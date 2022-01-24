@@ -20,7 +20,7 @@ if len(one_letter_input) < 1:
 
 matching_character: int = 0
 
-print("searching for "+ one_letter_input +" in "+ five_letter_word)
+print("searching for " + one_letter_input + " in " + five_letter_word)
 
 if (five_letter_word[0] == one_letter_input):
     print(one_letter_input + " found at index 0")
@@ -54,12 +54,12 @@ if (matching_character == 0):
     print("No instances of " + one_letter_input + " found in " + five_letter_word)
 else:
     if (matching_character == 1):
-        print("1 instance of "+ one_letter_input + " found in " + five_letter_word)
+        print("1 instance of " + one_letter_input + " found in " + five_letter_word)
     if(matching_character == 2):
         print("2 instances of " + one_letter_input + " found in " + five_letter_word)
     if(matching_character == 3):
         print("3 instances of " + one_letter_input + " found in " + five_letter_word)
     if(matching_character == 4):
-        print("4 instances of "+ one_letter_input + " found in " + five_letter_word)
+        print("4 instances of " + one_letter_input + " found in " + five_letter_word)
     if(matching_character == 5):
         print("5 instances of " + one_letter_input + " found in " + five_letter_word)
