@@ -1,24 +1,25 @@
 """Tests for Excercise 5."""
 
-from exercises.ex05.utils import concat, only_evens, sub
+
+from utils import only_evens, sub, concat
 
 
 def test_sub_one() -> None:
     """Tests function when given empty list."""
-    a: list = []
+    a: list[int] = [2, 3, 4, 5, 6]
     assert sub(a, 7, 5) == []
 
 
 def test_sub_two() -> None:
     """Tests function when c is greater than number of indices."""
-    a: list = [1, 2, 3, 4, 5, 6]
-    assert sub(a, 2, 7) == [3, 4, 5, 6]
+    sub_test_two: list[int] = [1, 2, 3, 4, 5, 6]
+    assert sub(sub_test_two, 2, 7) == [3, 4, 5, 6]
 
 
 def test_sub_three() -> None:
     """Tests function when start index is less than 0."""
-    a: list = [1, 2, 3, 4, 5, 6]
-    assert sub(a, -1, 3) == [1, 2, 3, 4]
+    sub_test_three: list[int] = [1, 2, 3, 4, 5, 6]
+    assert sub(sub_test_three, -1, 3) == [1, 2, 3]
 
 
 def test_only_evens_one() -> None:

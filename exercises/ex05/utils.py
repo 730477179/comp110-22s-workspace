@@ -18,14 +18,17 @@ def only_evens(a: list[int]) -> list[int]:
 def sub(a: list[int], b: int, c: int) -> list[int]:
     """Give the values of list at range of index."""
     new_list_for_sub: list[int] = []
-    i: int = b
+    i: int = 0
     if len(a) == 0 or b > len(a) or c <= 0:
         return new_list_for_sub
-    elif b < 0:
-        b = a[0]
-        while i >= b and c <= len(a): 
-            new_list_for_sub.append(a[i])
-            i = i + 1
+    if b < 0:
+        b = 0
+    if c > len(a):
+        c = len(a)
+    i = b
+    while i < c:
+        new_list_for_sub.append(a[i])
+        i = i + 1
     return new_list_for_sub
 
 
