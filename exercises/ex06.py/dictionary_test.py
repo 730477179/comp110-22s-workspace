@@ -1,4 +1,5 @@
 """Test for our dictionary functions"""
+__author__ = """730477179."""
 
 from dictionaries import invert, count, favorite_colors 
 
