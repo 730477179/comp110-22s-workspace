@@ -5,7 +5,7 @@ from typing import Union
 
 def log(info: Union[str, int]) -> None:
     """Info can be str or int!"""
-    if is instance(info, str):
+    if isinstance(info, str):
         print(f"str: {info}")
     else:
         print(f"int: {info}")
